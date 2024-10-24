@@ -1,11 +1,12 @@
-const data = require('fs').readFileSync('example.txt').toString().trim().map(Number);
+const data = require('fs').readFileSync('example.txt').toString().trim()
 
-const chess = [1,1,2,2,2,8]
+const temp = []
 
-let result = ''
-
-for(let i = 0; i < data.length; i++){
-    result += `${chess[i] - data[i]} `
+for(let i = 1; i <= data * 2 - 1; i++){
+    if(i <= data){
+        console.log(' '.repeat(data - i) + '*'.repeat(i * 2 - 1))
+        temp.push(' '.repeat(data - i) + '*'.repeat(i * 2 - 1))
+    } else {
+        console.log(temp[data * 2 - i - 1])
+    }
 }
-
-console.log(result.trim())
