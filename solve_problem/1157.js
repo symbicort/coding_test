@@ -1,4 +1,4 @@
-const data = require('fs').readFileSync('example.txt').toString().trim().toUpperCase()
+const data = require('fs').readFileSync('example.txt').toString().trim().toUpperCase().split('')
 
 let maxvalue = 0
 
