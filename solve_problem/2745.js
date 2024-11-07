@@ -7,3 +7,10 @@ for(let i = 0; i < example[0].length; i++){
 }
 
 console.log(result) 
+
+// const fs = require("fs");
+// let [num, divider] = fs.readFileSync("example.txt").toString().trim().split(" ");
+
+// let ans = parseInt(num, Number(divider));
+
+// console.log(ans);
