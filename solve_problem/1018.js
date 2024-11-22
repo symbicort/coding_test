@@ -2,23 +2,31 @@ const example = require('fs').readFileSync('example.txt').toString().trim().spli
 
 const [line, length] = example[0].split(' ').map(Number)
 
-let first = ''
-let result = 0;
+const chess = ['WBWBWBWB', 'BWBWBWBW']
 
-for(let i = 1; i <= line; i++){
-    const data = example[i].split('').slice(0, 8)
-    console.log(data)
+let result = [];
+
+for(let i = 1; i <= line - 7; i++){
+    console.log("반복 횟수", i)
+    // 세로로 자름
+    const split = example.slice(i, i + 8)
+
+    // 가로로 자른 뒤 틀린 부분 계산이 필요
+    for(let j = 0; j < length - 7; j++){
+        let first = ''
+        for(let k = 0; k < 8; k++){
+            const data = split[k].slice(j, j + 7)
+            
+        }
+        
+        
+    }
+
+    // split.forEach((data, index) => {
+    //     for(let j = 0; j < data.length - 8; j++){
+    //         const splitData = data.slice(j, j + 8)
+    //         console.log("이건 안찍힘", splitData)
+    //     }
+    // })
+
 }
-
-
-// BBBWBWBW 1
-// BBBBWBWB 2
-// BBBWBWBW 1
-// BBBBWBWB 2
-// BBBWBWBW 1
-// BBBBWBWB 2
-// BBBWBWBW 1
-// BBBBWBWB 2
-// WWWWWBWB 2
-// WWWWWBWB
-
