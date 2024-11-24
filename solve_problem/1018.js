@@ -7,7 +7,6 @@ const chess = ['WBWBWBWB', 'BWBWBWBW']
 let result = [];
 
 for(let i = 1; i <= line - 7; i++){
-    console.log("반복 횟수", i)
     // 세로로 자름
     const split = example.slice(i, i + 8)
 
