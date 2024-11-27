@@ -13,6 +13,7 @@ for(let i = 1; i <= line - 7; i++){
     // 가로로 자른 뒤 틀린 부분 계산이 필요
     for(let j = 0; j < length - 7; j++){
         let first = ''
+        // 세로 줄 계산
         for(let k = 0; k < 8; k++){
             const data = split[k].slice(j, j + 7)
             
