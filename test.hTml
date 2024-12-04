@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+</head>
+<body>
+    <h1>Video Downloader</h1>
+    <label for="videoUrl">Enter Video URL:</label>
+    <input type="text" id="videoUrl" placeholder="Enter video URL here" style="width: 100%; margin-bottom: 10px;">
+    <button onclick="downloadVideo()">Download Video</button>
+
+    <script>
+        function downloadVideo() {
+            const url = document.getElementById('videoUrl').value;
+            if (!url) {
+                alert('Please enter a valid video URL.');
+                return;
+            }
+
+            // Create an anchor element
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'video.mp4'; // Set the download filename
+
+            // Trigger the download
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+
+<video class="jw-video jw-reset" tabindex="-1" disableremoteplayback="" webkit-playsinline="" playsinline="" jw-loaded="data" src="blob:https://david.cdnbuzz.buzz/d7515226-9586-4ea3-8135-3364234627da" jw-played=""></video>
+</body>
+</html>
