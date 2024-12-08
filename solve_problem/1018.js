@@ -21,7 +21,7 @@ for(let i = 1; i <= line - 7; i++){
         
         
     }
-    // 내가 작성한 코드
+    
     // split.forEach((data, index) => {
     //     for(let j = 0; j < data.length - 8; j++){
     //         const splitData = data.slice(j, j + 8)
