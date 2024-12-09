@@ -18,8 +18,7 @@ for(let i = 1; i <= line - 7; i++){
             const data = split[k].slice(j, j + 7)
             
         }
-        
-        
+            
     }
     
     // split.forEach((data, index) => {
