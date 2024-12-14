@@ -24,7 +24,6 @@ for(let i = 1; i <= line - 7; i++){
     // split.forEach((data, index) => {
     //     for(let j = 0; j < data.length - 8; j++){
     //         const splitData = data.slice(j, j + 8)
-    //         console.log("이건 안찍힘", splitData)
     //     }
     // })
 
